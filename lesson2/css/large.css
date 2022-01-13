@@ -1,0 +1,28 @@
+@media only screen and (min-width: 1024px) {
+
+.column1, .column2, .column3 {
+    flex: 33.33%;
+    height: auto;
+    padding: 10px;
+    margin: 5px;
+    background-color: #cccccc;
+    text-align: center;
+  }
+
+  .main {
+     display: flex;
+  }
+
+  .column1, .column2, .column3 {
+    background-color: #cccccc;
+  }
+
+  h1 {
+      font-size: 35px;
+  }
+
+  .social img {
+      float: none;
+  }
+  
+}

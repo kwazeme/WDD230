@@ -1,0 +1,23 @@
+/* add medium @media quesry  */
+@media only screen and (min-width: 32.5em) {
+    h2 {
+        grid-column: 3/6;
+        align-self: center;
+        font-size: 35px;
+    }
+    
+    .top-banner {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .top-banner img {
+        grid-column: 2/2;
+        max-width: 150px;
+        margin-bottom: auto;
+     }
+
+     .top-banner h2 {
+        color: white; 
+    }
+}

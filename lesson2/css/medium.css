@@ -1,0 +1,56 @@
+/* add medium @media quesry  */
+@media only screen and (min-width: 32.5em) {
+    h2 {
+        grid-column: 3/6;
+        align-self: center;
+        font-size: 20px;
+        color: white; 
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+    
+    .top-banner {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .top-banner img {
+        grid-column: 2/2;
+        max-width: 150px;
+        margin-bottom: auto;
+     }
+
+     .main {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+     }
+
+     .column1, .column2, .column3 {
+        background-color: #cccccc;
+        padding: 10px;
+        margin: 5px;
+      }
+
+      .column1 img {
+          grid-column: 1/2;
+          width: 100%;
+      }
+
+      .column2 img {
+        grid-column: 2/3;
+        width: 100%;
+    }
+
+    .column3 img, .column3 {
+        grid-column: 1/3;
+        width: 96%;
+    }
+
+    .column3 img {
+        margin: 10px;
+    }
+
+
+}
