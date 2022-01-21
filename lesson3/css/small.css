@@ -1,0 +1,212 @@
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: rgb(65, 114, 116);
+  --secondary-color: #A4DEF9;
+  --accent1-color: #048A81;
+  --accent2-color: white;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Luxurious Roman";
+  --paragraph-font: "Luxurious Roman", sans-serif;
+
+  /* these colors below should be chosen from among palette colors above */
+  --headline-color-on-white: rgb(65, 114, 116);  /* headlines on a white background */ 
+  --headline-color-on-color: #C1E0F7 /* headlines on a colored background */ 
+  --paragraph-color-on-white: #2F6690; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #C1E0F7; /* paragraph text on a colored background */ 
+  --text-background-color: #000000;
+  --nav-link-color: rgb(65, 114, 116);
+  --nav-background-color: #A4DEF9;
+  --nav-hover-link-color: #A4DEF9;
+  --nav-hover-background-color: rgb(65, 114, 116);
+}
+
+
+/*  main css start here */
+html {
+  background-color: var(--primary-color);
+}
+body {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 1em;
+  font-size: large;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+header {
+  padding: 1em;
+  text-align: center;
+  color: var(--paragraph-color-on-color);
+  background-color: var(--text-background-color);
+}
+header > h1, header > h2 {
+  color: var(--headline-color-on-color);
+}
+
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color);
+  padding: 1em;
+}
+
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: auto;
+  text-align: center;
+}
+.colors th {
+  background-color: #999;
+}
+.colors td{
+  width: 25%;
+  height: 3em;
+}
+
+.primary {
+  background-color: var(--primary-color);
+}
+.secondary {
+  background-color: var(--secondary-color);
+}
+.accent1 {
+  background-color: var(--accent1-color);
+}
+.accent2{
+  background-color: var(--accent2-color);
+}
+
+p.colored {
+  background-color: var(--text-background-color);
+  color: var(--paragraph-color-on-color);
+}
+
+nav {
+  background-color: var(--nav-background-color);
+  line-height: 3em;
+  text-align: center;
+  font-size: 1em;
+}
+nav > ul {
+  list-style-type: none;
+  display: block;
+
+}
+nav a {
+  padding:1em;
+  min-width: 70px;
+}
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+.sitemap {
+  display: grid;
+  justify-content: center;
+
+  grid-template-columns: repeat(6, 15%);
+  grid-template-rows: 3em 1.5em 1.5em 3em;
+  grid-template-areas: ". . home home . ."
+    ". . . top . ."
+    ". left left right right ."
+    "page2 page2 . . page3 page3";
+}
+.sitemap > div {
+
+  text-align: center;
+
+}
+.sm-home {
+  grid-area: home;
+  background-color: #999;
+  line-height: 3em;
+}
+.sm-page2 {
+  grid-area: page2;
+  background-color: #999;
+  line-height: 3em;
+}
+.sm-page3 {
+  grid-area: page3;
+  background-color: #999;
+  line-height: 3em;
+}
+
+.top {
+  grid-area: top;
+  border-left: 1px solid;
+}
+
+.left {
+  grid-area: left;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+
+.right {
+  grid-area: right;
+  border-top: 1px solid;
+  border-right: 1px solid;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.typo-tab tbody tr:nth-child(1) td:nth-child(5) {
+  background-color: var(--primary-color);
+  font-size: 40px;
+  color: var(--accent2-color);
+}
+
+.typo-tab tbody tr:nth-child(2) td:nth-child(5) {
+  background-color: var(--nav-background-color);
+  font-size: 20px;
+  color: var(--nav-link-color);
+}
+
+.typo-tab tbody tr:nth-child(3) td:nth-child(5) {
+  background-color: var(--primary-color);
+  font-size: 20px;
+  color: var(--accent2-color);
+}
+/* headline h1*/
+.typo-tab tbody tr:nth-child(4) td:nth-child(5) {
+  font-size: 20px;
+  color: var(--headline-color-on-white);
+}
+
+.typo-tab tbody tr:nth-child(7) td:nth-child(5) {
+  font-size: 16px;
+  color: #000000;
+}
+
+/*Persona images*/
+.persona1 img {
+  max-width: 250px;
+}
+
+.persona2 img {
+  max-width: 250px;
+}
