@@ -202,6 +202,10 @@ tr:nth-child(even) {
   color: #000000;
 }
 
+.table {
+  overflow-x: auto;
+}
+
 /*Persona images*/
 .persona1 img {
   max-width: 250px;
