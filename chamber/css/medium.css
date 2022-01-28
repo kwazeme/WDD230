@@ -1,0 +1,68 @@
+@media only screen and (min-width: 32.5em) {
+
+
+    .news, .weather, .event, .join, .spotlight{
+        position: relative;   
+
+    }
+
+    .news {
+        top: -616px;
+    }
+    .event {
+        top: 616px;
+        width: 50%;
+    }
+
+    .weather {
+        top: 411px;
+        width: 50%;
+        left: 438px;
+        
+    }
+
+    .spotlight {
+        top: -616px;
+    }
+
+
+
+    .spotlight3 {display: none;}
+
+    .spotlight {
+        display: flex;
+        flex-direction: row;
+        height: 200px;
+    }
+
+    .spotlight1, .spotlight2 {
+        margin: -5px;
+    }
+
+    nav ul {display: none;}
+    nav ul.open {display: block;}
+    #hamburgerBtn span:nth-child(1) {display: block;}
+    #hamburgerBtn span:nth-child(2) {display: none;}
+
+    #hamburgerBtn.open span:nth-child(1) {display: none;}
+    #hamburgerBtn.open span:nth-child(2) {display: block;}
+
+    footer {
+        display: grid;
+        grid-template-columns: 50px 400px 1fr;
+        grid-template-rows: 1fr 1fr;
+        background-color: var(--primary-color);
+        border-radius: 15px 15px;
+        max-height: 300px;
+    }
+
+    footer p:nth-of-type(1) {
+        grid-column: 2;
+        grid-row: 1;
+        color: var(--text-on-primary-background);
+        margin: 50px;
+        text-align: center;
+    }
+
+    
+}/* end medium screen */

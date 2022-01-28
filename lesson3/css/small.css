@@ -11,7 +11,7 @@
 
   /* these colors below should be chosen from among palette colors above */
   --headline-color-on-white: rgb(14, 56, 58);  /* headlines on a white background */ 
-  --headline-color-on-color: #C1E0F7 /* headlines on a colored background */ 
+  --headline-color-on-color: #C1E0F7;/* headlines on a colored background */ 
   --paragraph-color-on-white: #2F6690; /* paragraph text on a white background */ 
   --paragraph-color-on-color: #C1E0F7; /* paragraph text on a colored background */ 
   --text-background-color: #000000;
@@ -95,11 +95,13 @@ nav {
 nav > ul {
   list-style-type: none;
   display: block;
-
+  padding: 0;
 }
 nav a {
-  padding:1em;
-  min-width: 70px;
+  display: block;
+  padding: 0;
+  min-width: 170px;
+  text-decoration: none;
 }
 nav a:link, nav a:visited {
   color: var(--nav-link-color);
