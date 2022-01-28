@@ -12,6 +12,10 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
     --secondary-color-redish:  rgb(229, 53, 53, 1);
     --nav-active-link-greyish:  #C1E0F7;
 
+    /* fonts used */
+    --heading-font: "Merriweather", sans-serif;
+    --paragraph-font: "Luxurious Roman", sans-serif;
+
     /* Select colors start here */
     --page-background-color-light: rgba(0,0,0,0.1);
     --page-border-color-light:  rgb(184, 179, 179);
@@ -21,7 +25,13 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 }
 
 /* color codes end here */
+body {
+    font-family: var(--paragraph-font);
+}
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+}
 /* main container organisation */
 main {
     margin: 50px;    
@@ -228,3 +238,8 @@ footer p:nth-of-type(2) {
     border-top: 1px solid var(--text-on-primary-background);
     margin: 30px;
 }
+
+footer a:link    {color:var(--paragraph-font);}
+footer a:visited {color:var(--nav-active-link-greyish)}
+footer a:hover   {color:var(--secondary-color-redish)}
+footer a:active  {color:var(--secondary-color-redish)}
