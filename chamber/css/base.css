@@ -37,58 +37,88 @@ main {
     margin: 50px;    
 }
 
-.event {
-    height: 200px;
+.weather {
+    height: 245px;
     width: 100%;
     padding: 10px;
-    border: 1px solid var(--page-border-color-light);
-    background-color: var(--page-background-color-light);
-    margin: 5px;   
+    margin: 5px; 
+    color: var(--text-on-primary-background);
 }
 
-.weather {
-    height: 200px;
-    width: 100%;
-    padding: 10px;
-    border: 1px solid var(--page-border-color-light);
-    background-color: var(--page-background-color-light);
-    margin: 5px; 
-}
+
 
 .join {
     height: 200px;
     width: 100%;
     padding: 10px;
-    border: 1px solid var(--page-border-color-light);
-    background-color: var(--page-background-color-light);
+    background-color: var(--primary-color);
     margin: 5px;
+    color: var(--text-on-primary-background);
+    text-align: center;
+}
+
+.join h2 {
+    background-color: var(--secondary-color-redish);
+    padding: 10px;
+    border-radius: 20px;
 }
 
 .siteHero {
     height: 200px;
     width: 100%;
-    padding: 10px;
-    border: 1px solid var(--page-border-color-light);
-    background-color: var(--page-background-color-light);
-    margin: 5px; 
+    margin: 5px;
+    overflow: hidden;
+
 }
 
 .news {
     height: 200px;
     width: 100%;
-    padding: 10px;
     border: 1px solid var(--page-border-color-light);
-    background-color: var(--page-background-color-light);
+    background-color: var(--primary-color);
     margin: 5px; 
+    color: var(--text-on-primary-background);
+    text-align: center;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.meet {
+    height: 200px;
+    width: 100%;
+    border: 1px solid var(--page-border-color-light);
+    background-color: var(--primary-color);
+    margin: 5px; 
+    color: var(--text-on-primary-background);
+    text-align: center;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.event {
+    height: 200px;
+    width: 100%;
+    border: 1px solid var(--page-border-color-light);
+    background-color: var(--primary-color);
+    font-size: small;
+    color: var(--text-on-primary-background);
+    text-align: center;
+    padding: 1px;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.event h3 {
+    background-color: var(--secondary-color-redish);
+    padding: 5px;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 .spotlight {
-    height: 400px;
+    height: 100%;
     width: 100%;
-    padding: 30px;
-    border: 1px solid var(--page-border-color-light);
-    background-color: var(--page-background-color-light);
-    flex-grow: 1;
+    background-color: var(--secondary-color-redish);
     display: flex;
     flex-direction: column;
     margin: 5px;
@@ -100,8 +130,28 @@ main {
 
 .spotlight div {
     flex-grow: 1;
-    border: 2px solid var(--page-border-color-light);
+    background-color: var(--secondary-color-redish);
+    box-shadow: 2px 2px 20px 1px var(--primary-color);
     padding: 10px;
+    color: var(--text-on-primary-background);
+    text-align: center;
+}
+
+.spotlight1 img {
+    max-width: 200px;
+}
+
+.spotlight2 img {
+   max-width: 150px;
+  
+}
+
+.spotlight2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
 }
 
 header {
@@ -162,11 +212,11 @@ nav button {
     margin: .2rem 2vw;
     background-color: transparent;
     border: none;
-    font-size: 2rem;
+    font-size: 1rem;
     color: var(--text-on-primary-background);
     position: absolute;
     top: 13rem;
-    right: 5rem;
+    right: 3rem;
 }
 
 nav ul li a {
@@ -201,7 +251,6 @@ footer {
     display: block;
     background-color: var(--primary-color);
     border-radius: 15px 15px;
-    margin: 50px;
     max-height: fit-content;
     text-align: center;
 }
@@ -239,7 +288,37 @@ footer p:nth-of-type(2) {
     margin: 30px;
 }
 
-footer a:link    {color:var(--paragraph-font);}
-footer a:visited {color:var(--nav-active-link-greyish)}
-footer a:hover   {color:var(--secondary-color-redish)}
-footer a:active  {color:var(--secondary-color-redish)}
+a:link    {color:var(--paragraph-font);}
+a:visited {color:var(--nav-active-link-greyish)}
+a:hover   {color:var(--secondary-color-redish)}
+a:active  {color:var(--secondary-color-redish)}
+
+.siteHero img {
+    width: 380px;
+    max-height: 100%;
+}
+
+.siteHero h2 {
+    position: relative;
+    top: -130px;
+    color: var(--text-on-primary-background);
+    background-color: var(--primary-color);
+    width: fit-content;
+    left: 40px;
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.siteHero p {
+    position: relative;
+    top: -150px;
+    color: var(--text-on-primary-background);
+    background-color: var(--primary-color);
+    width: fit-content;
+    left: 80px;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}

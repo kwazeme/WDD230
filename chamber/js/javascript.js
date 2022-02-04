@@ -14,8 +14,26 @@ document.querySelector(".lastModified").textContent = lastModified.toLocaleDateS
 // responsive menu block
 function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("open");
-    document.getElementById("hamburgerBtn").classList.toggle("open")
+    document.getElementById("hamburgerBtn").classList.toggle("open");
 }
 
 const x = document.getElementById("hamburgerBtn");
 x.onclick = toggleMenu;
+
+// tuesday or wednesday meet and greet notice display
+const dayOption = {weekday: "long"};
+const weekDay = new Date().toLocaleDateString("en-ZA", dayOption);
+//if weekDay === "Tuesday" or weekDay === "Wednesday": 
+if (weekDay == "Tuesday") {
+    // display .meet
+    document.querySelector(".meet").style.display = "block";
+    document.querySelector(".news").style.display = "none";
+} else if (weekDay == "Wednesday") {
+    // display .meet
+    document.querySelector(".meet").style.display = "block";
+    document.querySelector(".news").style.display = "none";
+} else {
+    // display .news
+    document.querySelector(".meet").style.display = "none";
+    document.querySelector(".news").style.display = "block";
+}
