@@ -24,14 +24,10 @@
     .weather {
         top: 451px;
         width: 50%;
-        right: -335px;
+        right: -365px;
     }
 
-    #openweathermap-widget-14 {
-        display: block;
-        margin: -15px;
-        margin-bottom: 20px;
-    }
+
 
     .spotlight {
         top: -616px;
@@ -106,7 +102,6 @@
     
 .siteHero img {
     width: 670px;
-
 }
 
     
