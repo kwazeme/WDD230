@@ -19,7 +19,10 @@
 </head>
 <body>
     <header>
-        <img src="images/mano@white.png" alt="logo">
+        <picture>
+            <source srcset="images/mano@white.webp" type="image/webp">
+            <img src="images/mano@white.png" alt="logo">
+        </picture>
         <h1>The Manor</h1>
         <h2>Chamber of Commerce</h2>
         <nav>
@@ -32,15 +35,23 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-        <img src="images/linkedin@32.png" alt="linkedIn">
-        <img src="images/twitter@32.png" alt="twitter">
+        <div class="social-ico">
+            <img src="images/linkedin@32.png" alt="linkedIn">
+            <img src="images/twitter@32.png" alt="twitter">
+        </div>
+
         <div class="timebar"></div>
     </header>
     <main>
         <!-- main content starts here -->
         <div class="siteHero">
             <!-- Hero main content -->
-            <img src="images/manor_banner650x580.jpg" alt="manor chamber banner">
+            <picture>
+                <source media="(max-width: 300px)" srcset="images/wdd230-org200.jpg">
+                <source media="(max-width: 800px)" srcset="images/wdd230-org650s.jpg">
+                <source media="(max-width: 1100px)" srcset="images/wdd230-org650.jpg">
+                <img src="images/wdd230-org650.jpg" alt="manor chamber site Hero">
+            </picture>
             <h2>Welcome to Lyttelton Manor</h2>
             <p>Join Our Chamber.</p>
         </div>
@@ -113,6 +124,7 @@
         </div>
     </footer>
     <!-- footer ends here. -->
+
 
     <script src="js/javascript.js"></script>
     <script src="js/weather.js"></script>
