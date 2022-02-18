@@ -37,3 +37,19 @@ if (weekDay == "Tuesday") {
     document.querySelector(".meet").style.display = "none";
     document.querySelector(".news").style.display = "block";
 }
+// Count number of visits or display message for first time visitors.
+const numDisplay = document.querySelector(".numVisits");
+
+let numStorage = Number(window.localStorage.getItem("visitLS"));
+
+if (numStorage !== 0) {
+    numDisplay.textContent = `This is your number ${numStorage} visit here, Thank you`;
+    
+} else {
+    numDisplay.textContent = `Welcome, this is your first visit`;
+    
+}
+
+numStorage++;
+// store number of visits in localStorage
+localStorage.setItem("visitLS", numStorage);
