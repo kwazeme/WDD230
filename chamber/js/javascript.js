@@ -109,7 +109,7 @@ if (numStorage == 1) {
 } else if (numStorage > 1) {
     let curTimeStamp = new Date(); // timestamp for current visit
     const timeStore = new Date(localStorage.getItem("visitTS")); // timestamp of first visit from localstorage.
-    let diffTime = curTimeStamp.getTime() - timeStore.getTime(); // difference between visits in time
+    let diffTime = timeStore.getTime() - curTimeStamp.getTime(); // difference between visits in time
     diffDays = parseInt(diffTime / (1000 * 3600 * 24)); // difference between visits in days
     // create display for number of days since last visit information
     daysDisplay.innerHTML = `<br /> Welcome back. This is <b>${diffDays} days</b> since your last visit.`
