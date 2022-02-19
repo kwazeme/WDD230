@@ -227,16 +227,18 @@ nav ul li a {
     text-align: center;
 }
 
+nav ul li a:hover {
+    background-color: var(--secondary-color-redish);
+    color: var(--text-on-primary-background);
+}
+
 nav ul li.active a {
     background-color: var(--page-background-color-light);
     color: var(--text-on-primary-background);
     font-size: large;
 }
 
-nav ul li a:hover {
-    background-color: var(--secondary-color-redish);
-    color: var(--text-on-primary-background);
-}
+
 
 nav ul {display: none;}
 nav ul.open {display: block;}
@@ -321,4 +323,43 @@ a:active  {color:var(--secondary-color-redish)}
     font-size: 15px;
     padding: 10px;
     border-radius: 10px;
+}
+
+.numVisits {
+    margin-top: -30px;
+    padding: 15px;
+}
+
+/* DISCOVER PAGE */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.box {
+    flex: 100%;
+    max-width: 100%;
+}
+
+.box img {
+    width: 100%;
+    vertical-align: middle;
+    margin-top: 10px;
+}
+
+figcaption {
+    background-color: var(--primary-color);
+    text-align: center;
+    color: var(--text-on-primary-background);
+}
+
+picture img[data-src] {
+    filter: blur(.2em);
+}
+
+picture img {
+    filter:blur(0em);
+    transition: filter 0.5s;
 }

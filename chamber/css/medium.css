@@ -16,6 +16,10 @@
     .meet {
         top: -616px;
     }
+
+    .discover {
+        top: 0;
+    }
     .event {
         top: 666px;
         width: 50%;
@@ -89,6 +93,9 @@
         max-height: 300px;
         margin-top: -200px;
     }
+    .disFooter {
+        margin: 0;
+    }
 
     footer p:nth-of-type(1) {
         grid-column: 2;
@@ -100,13 +107,33 @@
     }
 
     
-.siteHero img {
-    width: 670px;
-}
+    .siteHero img {
+        width: 670px;
+    }
 
-.numVisits {
-    margin-top: -30px;
-}
+    .numVisits {
+        margin-top: -30px;
+        padding: 1px;
+    }
 
+/* DISCOVER PAGE  */
+
+    .box {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+    }
+
+    picture img:hover {
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
     
 }/* end medium screen */

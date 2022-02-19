@@ -197,5 +197,16 @@
         font-size: 1rem;
     }
 
+    /* DISCOVER PAGE CSS STARTS HERE */
+    
+    /* divide page into four equal column boxes */
+
+    .box {
+        flex: 22%;
+        max-width: 25%;
+    }
+
+
+
     
 }
