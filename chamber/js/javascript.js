@@ -109,11 +109,19 @@ if (numStorage == 1) {
 } else if (numStorage > 1) {
     let curTimeStamp = new Date(); // timestamp for current visit
     const timeStore = new Date(localStorage.getItem("visitTS")); // timestamp of first visit from localstorage.
-    let diffTime = timeStore.getTime() - curTimeStamp.getTime(); // difference between visits in time
-    diffDays = parseInt(diffTime / (1000 * 3600 * 24)); // difference between visits in days
-    // create display for number of days since last visit information
-    daysDisplay.innerHTML = `<br /> Welcome back. This is <b>${diffDays} days</b> since your last visit.`
-    daysDisplay2.innerHTML = `<br /> Welcome back. This is <b>${diffDays} days</b> since your last visit.`
+    let diffTime = parseInt(curTimeStamp.getTime() - timeStore.getTime()); // difference between visits in time
+    let diffDays = parseInt(diffTime / (1000 * 3600 * 24)); // difference between visits in days
+    if (diffDays < 1) {
+        // create display for number of seconds since last visit information
+        daysDisplay.innerHTML = `<br /> Welcome back. <br>This is <b class="blinking">${Math.round(diffTime / (1000 * 24 * 60))} minutes</b> since your last visit.`;
+        daysDisplay2.innerHTML = `<br /> Welcome back. <br>This is <b class="blinking">${Math.round(diffTime / (1000 * 24 * 60))} minutes</b> since your last visit.`;
+    } else {
+        // creat display for number of days since last visit information.
+        daysDisplay.innerHTML = `<br /> Welcome back. <b class="blinking">This is <b>${Math.round(diffDays)} days</b> since your last visit.`;
+        daysDisplay2.innerHTML = `<br /> Welcome back. <b class="blinking">This is <b>${Math.round(diffDays)} days</b> since your last visit.`;
+        
+    }
+
 
     
 
