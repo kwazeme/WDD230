@@ -6,7 +6,7 @@ let imagesToLoad = document.querySelectorAll("img[data-src]");
 
 const imageOptions = {
     threshold: 0,
-    rootMargin: '0px 0px -500px 0px'
+    rootMargin: '0px 0px -400px 0px'
 };
 
 const loadImages = (image) => {
@@ -117,14 +117,10 @@ if (numStorage == 1) {
         daysDisplay2.innerHTML = `<br /> Welcome back. <br>This is <b class="blinking">${Math.round(diffTime / (1000 * 24 * 60))} minutes</b> since your last visit.`;
     } else {
         // creat display for number of days since last visit information.
-        daysDisplay.innerHTML = `<br /> Welcome back. <b class="blinking">This is <b>${Math.round(diffDays)} days</b> since your last visit.`;
-        daysDisplay2.innerHTML = `<br /> Welcome back. <b class="blinking">This is <b>${Math.round(diffDays)} days</b> since your last visit.`;
+        daysDisplay.innerHTML = `<br /> Welcome back. <br>This is <b class="blinking">${Math.round(diffDays)} days</b> since your last visit.`;
+        daysDisplay2.innerHTML = `<br /> Welcome back. <br>This is <b class="blinking">${Math.round(diffDays)} days</b> since your last visit.`;
         
     }
-
-
-    
-
     
 }
 

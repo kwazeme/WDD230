@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+
+:root {
+	--drop-shadow: hsla(150, 50%, 30%, 1);
+    --top-header: rgba(22, 123, 163, 0.5);
+    --header-background: hsl(193, 37%, 52%);
+	--even-strip: hsl(191, 20%, 68%);
+    --odd-stip: hsl(177, 32%, 78%);
+    --text-accent: rgb(239, 245, 245);
+    --text-accent-black: #000;
+    --border-all: #6c7b83;
+    --accent: rgb(94, 163, 184);
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    padding: 5px 25px;
+    font-size: 18px;
+    margin: 0;
+  }
+
+
+table {
+	margin: 10px auto;
+	box-shadow: 0 0 30px var(--drop-shadow);
+	border-collapse: collapse;
+}
+
+tr:first-child th {
+	background-color: var(--top-header);
+    font-size: 1.5rem;
+    color: var(--text-accent-black);
+	
+}
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid var(--border-all)
+}
+
+th {
+	background-color: var(--header-background);
+    color: var(--text-accent);
+    font-weight: 500;
+  
+}
+
+td {
+	text-align: center;
+}
+
+tbody tr:nth-child(even) {
+	background-color: var(--even-strip);
+    color: var(--fore-light);
+}
+
+tbody tr:nth-child(odd) {
+	background-color: var(--odd-stip);
+}
+
+table tbody tr:nth-child(5) td:nth-child(1) {font-style: italic;}
+table tbody tr:nth-child(4) td:nth-child(3) {background-color: var(--accent);}
+
+tfoot {
+    font-size: 12px;
+    background-color: var(--header-background);
+}
+
+
+
+
+
+
+
+
