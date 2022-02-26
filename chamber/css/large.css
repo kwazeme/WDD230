@@ -206,6 +206,11 @@
         max-width: 25%;
     }
 
+    .formbox {
+        flex: 45%;
+        max-width: 50%;
+    }
+
 
 
     

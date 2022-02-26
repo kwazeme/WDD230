@@ -20,6 +20,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
     --page-background-color-light: rgba(0,0,0,0.1);
     --page-border-color-light:  rgb(184, 179, 179);
     --text-on-primary-background:  whitesmoke;
+    --valid-input-color: green;
 
 
 }
@@ -338,7 +339,7 @@ a:active  {color:var(--secondary-color-redish)}
     padding: 0;
 }
 
-.box {
+.box, .formbox {
     flex: 100%;
     max-width: 100%;
 }
@@ -375,3 +376,77 @@ picture img {
     50% { opacity: 1s;}
     100% {opacity: 2;}
 }
+/* Membership form styling */
+form fieldset, fieldset {
+    margin: 2rem 0;
+    border: 2px solid var(--primary-color);
+    border-radius: 0 20px;
+    padding: .5rem 2%;
+}
+
+form legend, legend {
+    color: var(--primary-color);
+    font-weight: bold;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.contact, form div, label.level, label.business {
+    display: block;
+    padding-top: 1rem;
+    color: var(--primary-color);
+    font-size: 1.18rem;
+}
+
+form label.contact input, form label.contact select, form label.business input, form label.business textarea {
+    -webkit-appearance:none ;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px var(--nav-active-link-greyish);
+    border-radius: 4px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 20rem;
+    background-color: var(--nav-active-link-greyish)
+}
+
+form label.level {
+    display: block;
+    padding: .75rem 0;
+    color: var(--primary-color);
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--text-on-primary-background);
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form label.contact input:required {
+    color:var(--secondary-color-redish);
+    border-left: solid var(--secondary-color-redish) 4px;
+    border-radius: 0 10px;
+}
+
+form label.contact input:required:valid {
+    color: var(--valid-input-color);
+    border-left: var(--valid-input-color) solid 6px;
+    border-radius: 0 10px;
+}
+
+form label.contact i {
+    font-size: .8rem;
+}
+
+.submitBtn:hover {background-color: var(--valid-input-color)}
+
+.button:active {
+  background-color: var(--valid-input-color);
+  box-shadow: 0 15px var(--nav-active-link-greyish);
+}
+
