@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+:root {
+    ---hightlight-color: #2e7294;
+    ---background-color: #ddd;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Merriweather, sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: var(---background-color);
+}
+header h1 {margin: 0;color: var(---hightlight-color);text-align: center;}
+header h2, h2 {
+    margin: 0;
+    font-weight: bold;
+    font-size: large;
+    color: var(---hightlight-color);
+    text-align: center;
+}
+
+p {
+    margin: 0;
+    font-size: .9rem;
+    padding: 6px;
+    color: var(---hightlight-color);
+    text-align: center;
+}
+
+/*----------- NAVIGATION --------------*/
+
+
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  
+  section {
+    margin: 0.25rem;
+    padding: 0.35rem;
+    background-color: var(---background-color);
+    border: 1px solid var(---hightlight-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section img {
+      max-width: 70%;
+  }
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #80c7ff;
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+ /* load the placeholders with a transition blur */
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
