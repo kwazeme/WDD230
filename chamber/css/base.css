@@ -449,4 +449,68 @@ form label.contact i {
   background-color: var(--valid-input-color);
   box-shadow: 0 15px var(--nav-active-link-greyish);
 }
+/* DIRECTORY PAGE CSS START HERE */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  
+  .cardSection {
+    margin: 0.25rem;
+    padding: 0.35rem;
+    border: 1px solid var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardSection img {
+      max-width: 30%;
+  }
+
+  .dirBox {
+    display: block;
+}
+
+.cardSection h2 {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.dirButtons {
+    text-align: center;   
+}
+
+button.listBtn, button.gridBtn {
+    margin: 3px;
+    border: 2px solid var(--primary-color);
+    background-color: var(--text-on-primary-background);
+    font-size: 40px;
+    color: var(--primary-color);
+}
+
+.listBtn:hover, .gridBtn:hover {background-color: var(--page-background-color-light);}
+.listBtn:active, .gridBtn:active {background-color: var(--nav-active-link-greyish);}
+
+tr:nth-child(even) {
+    background-color: var(--nav-active-link-greyish);
+  }
+td {
+    padding: 15px;
+}
+/* 
+table,
+table tbody,
+table td,
+table tr {
+  display: block;
+} */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid var(--nav-active-link-greyish);
+  }
+
 
