@@ -12,7 +12,7 @@ fetch(requestURL)
     })
     // test to see if we get a valid, parsed response using a console.table() method to output the results to the console.    // 
     .then(function (jsonObject) {
-        console.table(jsonObject);
+        // console.table(jsonObject);
         const prophets = jsonObject["prophets"];
         prophets.forEach(displayProphets);
     });
@@ -38,6 +38,6 @@ function displayProphets(prophet) {
 
 // add to existing HTML div
     cards.appendChild(card);
-
+    
 }
 
