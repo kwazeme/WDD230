@@ -15,13 +15,15 @@ fetch(requestURL)
 
         const gridView = document.querySelector(".gridBtn");
         const listView = document.querySelector(".listBtn");
+        // display default view
         dirList.forEach(displayDir);
-        listView.addEventListener("click", function (e) {
+        // display listView
+        listView.addEventListener("click", function () {
             toggleList()
             dirList.forEach(displayList);
         });
-
-        gridView.addEventListener("click", function (e) {
+        // display gridView
+        gridView.addEventListener("click", function () {
             toggleCard()
             dirList.forEach(displayDir);
         });
@@ -46,7 +48,6 @@ function displayDir(directory) {
 // append to the section(card)
     card.appendChild(logo);
     card.appendChild(name);
-    // card.appendChild(phone)
     card.appendChild(address)
     
 // add to existing HTML div
@@ -54,21 +55,14 @@ function displayDir(directory) {
 }
 
 function displayList(directory) {
-    // create elements to add to the document
-    // let table = document.createElement("table");
-    // table.className = "listTabs";
-    // let tbody = document.createElement('tbody');
-    // lists.appendChild(tbody)
     let tr = document.createElement("tr");
     tr.innerHTML = `<td>${directory.companyname} </td> <td>${directory.phone}</td> <td>${directory.address}</td> <td>${directory.website}</td>`
 
     // add to existing HTML div
-    // tbody.appendChild(tr);
     lists.appendChild(tr)
 }
 
 function toggleList() {
-    // document.getElementById("cardToggle").classList.toggle("cards");
     document.getElementById("listToggle").style.display = "block";
     document.getElementById("cardToggle").style.display = "none";
 }
@@ -76,5 +70,4 @@ function toggleList() {
 function toggleCard() {
     document.getElementById("cardToggle").style.display = "grid";
     document.getElementById("listToggle").style.display = "none";
-    // document.getElementById("listToggle").classList.toggle("lists");
 }

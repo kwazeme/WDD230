@@ -492,25 +492,14 @@ button.listBtn, button.gridBtn {
 .listBtn:hover, .gridBtn:hover {background-color: var(--page-background-color-light);}
 .listBtn:active, .gridBtn:active {background-color: var(--nav-active-link-greyish);}
 
+
+
 tr:nth-child(even) {
     background-color: var(--nav-active-link-greyish);
-  }
+}
+
 td {
     padding: 15px;
 }
-/* 
-table,
-table tbody,
-table td,
-table tr {
-  display: block;
-} */
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-    border: 1px solid var(--nav-active-link-greyish);
-  }
 
 
