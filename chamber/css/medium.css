@@ -137,7 +137,13 @@
     }
 
     /* DIRECTORY PAGE DISPLAY START */
- 
+    tr {
+        display: table-row;
+    }
+    
+    td {
+        padding: 15px;
+    }
     
 
 }/* end medium screen */

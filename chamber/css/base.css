@@ -499,7 +499,11 @@ tr:nth-child(even) {
 }
 
 td {
-    padding: 15px;
+    padding: 5px;
+}
+tr {
+    display: grid;
+    padding: 0;
 }
 
 
