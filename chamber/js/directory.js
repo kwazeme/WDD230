@@ -21,6 +21,7 @@ fetch(requestURL)
         listView.addEventListener("click", function () {
             toggleList()
             dirList.forEach(displayList);
+            
         });
         // display gridView
         gridView.addEventListener("click", function () {
