@@ -137,11 +137,11 @@
     }
 
     /* DIRECTORY PAGE DISPLAY START */
-    tr {
+    .listTabs tr {
         display: table-row;
     }
     
-    td {
+    .listTabs tr > td {
         padding: 15px;
     }
     

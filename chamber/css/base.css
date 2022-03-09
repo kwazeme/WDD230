@@ -494,14 +494,14 @@ button.listBtn, button.gridBtn {
 
 
 
-tr:nth-child(even) {
+.listTabs > tr:nth-child(odd) {
     background-color: var(--nav-active-link-greyish);
 }
 
 td {
     padding: 5px;
 }
-tr {
+.listTabs tr {
     display: grid;
     padding: 0;
 }

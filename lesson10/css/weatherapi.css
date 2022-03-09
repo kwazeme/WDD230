@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+:root {
+    ---hightlight-color: #2e7294;
+    ---background-color: #ddd;
+    --text-on-primary-background: hsl(0, 25%, 94%);
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Merriweather, sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: var(---background-color);
+}
+header h1 {margin: 0;color: var(---hightlight-color);text-align: center;}
+header h2, h2 {
+    margin: 0;
+    font-weight: bold;
+    font-size: large;
+    color: var(---hightlight-color);
+    text-align: center;
+}
+
+p {
+    margin: 0;
+    font-size: .9rem;
+    padding: 6px;
+    color: var(---hightlight-color);
+    text-align: center;
+}
+
+/*----------- NAVIGATION --------------*/
+
+
+/*----------- MAIN --------------*/
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 2%;
+    min-height: 10rem;
+}
+
+.weatherBox {
+    grid-column: 2;
+    width: 100%;
+    background-color: var(---hightlight-color);
+    border-radius: 20px;
+    padding: 10px;
+
+  }
+
+  .weatherBox > p {
+      color: var(--text-on-primary-background);
+  }
+  #current-temp {
+      font-weight: 700;
+  }
+
+  figure img {
+      width: 150px;
+  }
+
+  figure {
+      text-align: center;
+  }
+
+  figcaption {color: var(--text-on-primary-background);}
+  
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #80c7ff;
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
