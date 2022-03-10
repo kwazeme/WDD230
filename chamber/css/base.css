@@ -21,6 +21,8 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
     --page-border-color-light:  rgb(184, 179, 179);
     --text-on-primary-background:  whitesmoke;
     --valid-input-color: green;
+    --weather-background: hsl(42, 100%, 67%);
+    --black-on-accent: black;
 
 
 }
@@ -43,10 +45,39 @@ main {
     width: 100%;
     padding: 10px;
     margin: 5px; 
-    color: var(--text-on-primary-background);
+    color: var(--black-on-accent);
+    background-color: var(--weather-background);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.city {
+    grid-column: 1/1;
+}
+.weather img {
+    width: 90px;
 }
 
+.weather p {
+    font-size: 40px;
+    grid-column: 1/2;
+    grid-row: 2/2;
+    margin-top: -20px;
+}
 
+.windSpeed {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.windChill {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    text-align: center;
+}
+.api {
+    font-size: 10px;
+}
 
 .join {
     height: 200px;

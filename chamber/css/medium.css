@@ -29,6 +29,8 @@
         top: 451px;
         width: 50%;
         right: -365px;
+        max-inline-size: 350px;
+
     }
 
 

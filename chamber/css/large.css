@@ -110,6 +110,10 @@
 
     .weather {     
         margin: 0;
+        width: 100%;
+    }
+    .windSpeed {
+        font-size: 12px;
     }
  
 
