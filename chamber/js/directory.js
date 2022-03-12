@@ -1,5 +1,5 @@
 // store resource URL in a const
-const requestURL = "https://kwazeme.github.io/wdd230/chamber/js/data.json";
+const requestURL = "./js/data.json";
 const cards = document.querySelector(".cards");
 const lists = document.querySelector(".listTabs")
 
