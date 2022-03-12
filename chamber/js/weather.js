@@ -5,9 +5,9 @@ const apiURL = "https://api.openweathermap.org/data/2.5/weather?q=Lyttelton&unit
 fetch(apiURL) 
     .then((response) => response.json())
     .then((jsonObject) => {
-        console.log(jsonObject);
+        // console.log(jsonObject);
         // write the temperature value to the HTML document using id value  'current-temp'.
-        document.querySelector("#current-temp").textContent = jsonObject.main.temp.toFixed(1);
+        document.querySelector("#current-temp").textContent = jsonObject.main.temp.toFixed(0);
         // add weather icon
         const iconSRC = `https://openweathermap.org/img/w/${jsonObject.weather[0].icon}.png`;
         const desc = jsonObject.weather[0].description;
@@ -15,17 +15,21 @@ fetch(apiURL)
         document.querySelector("#weathericon").textContent = iconSRC;
         document.querySelector("#weathericon").setAttribute("src", iconSRC);
         document.querySelector("#weathericon").setAttribute("alt", desc);
-        document.querySelector(".windSpeed").innerHTML = `Feels Like: </td><td>&emsp;<b>${jsonObject.main.feels_like.toFixed(1)}</b>&deg;C</td></tr>&emsp;
+        document.querySelector(".windSpeed").innerHTML = `Feels Like: </td><td>&emsp;<b>${jsonObject.main.feels_like.toFixed(0)}</b>&deg;C</td></tr>&emsp;
         <tr><td>Humidity:&emsp; </td><td><b>${jsonObject.main.humidity}%</b>&emsp;</td></tr>
-        <br><tr><td>Windspeed:&emsp;</td><td><b>${jsonObject.wind.speed}</b>m/sec</td></tr>`;
+        <br><tr><td>Windspeed:&emsp;</td><td><b>${jsonObject.wind.speed}</b> m/s</td></tr>`;
         document.querySelector(".windChill").innerHTML = "<hr>windChill: N/A"
         // calculae windChill for temperature less than or equal to 10degCelcius and windspeed greater than 1.3412m/s
         const temp = parseFloat(jsonObject.main.temp);
-        const wSpeed = parseFloat(jsonObject.wind.speed);
+        const wS = parseFloat(jsonObject.wind.speed); // wSpeed in m/s.
+        const wSpeed = wS * 3.6 // wS * 3.6 = km/h
         if (temp <= 10 && wSpeed > 1.3412) {
-            wChill = (12.1452 + (11.6222 * Math.sqrt(wSpeed)) - (1.16222 * wSpeed)) * (33 - temp)
+            wChill = (13.12 + (0.6215 * temp) -  11.37 (wSpeed ^ 0.16) + (0.3965 * temp) * (wSpeed ^ 0.16))
+            // wChill = (12.1452 + (11.6222 * Math.sqrt(wSpeed)) - (1.16222 * wSpeed)) * (33 - temp)
             // add windChill to HTML
-            document.querySelector(".windChill").innerHTML = `windChill: ${wChill} W/msqr`
+            // document.querySelector(".windChill").innerHTML = `windChill: ${wChill} W/msqr` // windChill in Watts/ms
+            document.querySelector(".windChill").innerHTML = `windChill: ${wChill}`
+
         } 
     });
 

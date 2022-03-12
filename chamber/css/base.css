@@ -54,6 +54,7 @@ main {
 }
 .city {
     grid-column: 1/1;
+    line-height: .1;
 }
 .weather img {
     width: 90px;
@@ -77,6 +78,7 @@ main {
 }
 .api {
     font-size: 10px;
+    grid-column: 1/4;
 }
 
 .join {
