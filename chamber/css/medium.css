@@ -146,6 +146,10 @@
     .listTabs tr > td {
         padding: 15px;
     }
+    /* CONTACT US PAGE CSS */
+    .contactRow {
+        display: grid;
+    }
     
 
 }/* end medium screen */

@@ -458,6 +458,7 @@ form input.submitBtn {
     margin: 0 0 2rem 2%;
     width: 96%;
     max-width: 20rem;
+    margin-top: 15px;
 }
 
 form label.contact input:required {
@@ -476,7 +477,11 @@ form label.contact i {
     font-size: .8rem;
 }
 
-.submitBtn:hover {background-color: var(--valid-input-color)}
+.submitBtn:hover {
+    background-color: var(--weather-background);
+    color: var(--primary-color);
+    font-weight: 700;
+}
 
 .button:active {
   background-color: var(--valid-input-color);
@@ -538,5 +543,53 @@ td {
     display: grid;
     padding: 0;
 }
+/* CONTACT CSS STARTS HERE */
+.contactRow {
+    display: block;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    width: 100%;
+    }
+
+.contactInfo {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+}
+
+.contactForm {
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+    border: 2px solid var(--primary-color);
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+.jRow {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--text-on-primary-background);
+    text-align: center;
+    padding: 15px;
+}
+
+.contactForm > legend, .contactInfo>legend {
+    width: 100%;
+    text-align: center;
+}
+
+legend > hr {
+    width: 100px;
+}
+.contactMap {
+    display: flex;
+    width: 100%;
+}
+
+ 
+  
+    
 
 
