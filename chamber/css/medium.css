@@ -44,37 +44,34 @@
     .spotlight {
         display: flex;
         flex-direction: row;
-        height: 200px;
-   
+        height: 185px;
+
     }
 
     .spotlight2 img {
         margin: -18px;
-        height: 100px;
-        
     }
 
     .spotlight2 h2 {
         margin-top: 0;
         padding: 10px;
-        
+        font-size: 15px;
     }
 
     .spotlight1 img {
-        float: left;
-        margin-top: -70px;
-        padding: 20px;
-        max-width: 200px;
+        margin-top: -10px;
+        width: 50%;
+              
     }
 
     .spotlight1 h2 {
-        text-align: right;
-        margin-right: 50px;
+        text-align: center;
+        font-size: medium;
     }
 
     .spotlight1 p {
-        text-align: left;
-        margin-right: 30px;
+        text-align: center;
+        font-size: 15px;
     }
     
 

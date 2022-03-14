@@ -5,7 +5,6 @@ subForm.addEventListener("submit", (e) => {
     subForm.style.display = "none";
     document.querySelector(".subMessage").innerHTML = 'Thanks for your message. We will get back to you within 24 hours.'
     document.querySelector(".sub").innerHTML = `<hr>We Got You<hr><br>`
-
 });
 
 

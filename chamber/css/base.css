@@ -106,7 +106,6 @@ main {
 }
 
 .news {
-    height: 200px;
     width: 100%;
     border: 1px solid var(--page-border-color-light);
     background-color: var(--primary-color);
@@ -401,7 +400,7 @@ picture img {
 .blinking {
     animation-name: visitsTS;
     animation-duration: 1s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 5;
     opacity: 1;
 }
 @keyframes visitsTS {

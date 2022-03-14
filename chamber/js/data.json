@@ -6,15 +6,15 @@
         "address": "139 CANTONMENTS ROAD, , Lyttelton, South Africa",
         "phone": 27126642803,
         "website": "http://www.gutesheim.co.za/",
-        "member-level": 1
-      },
+        "memberLevel": 1
+      },  
       {
         "companyname": "PROTOURS COACH CHARTER",
         "logourl": "images/directory/protoours.webp",
         "address": "1021 ERGON AVENUE, 0157, Lyttelton, Lyttelton, South Africa",
         "phone": 27126649000,
         "website": "http://www.protours.co.za",
-        "member-level": 1
+        "memberLevel": 1
       },
       {
         "companyname": "U PROP.COM",
@@ -22,7 +22,7 @@
         "address": "CNR NAPIER & CRADOCK AVE, LYTTELTON, P.O.BOX 5914, PRETORIA, 0001., Lyttelton, Gauteng, South Africa",
         "phone": 27126640977,
         "website": "http://www.uprop.com",
-        "member-level": 2
+        "memberLevel": 2
       },
       {
         "companyname": "CENTURION GUEST HOUSE & LODGE",
@@ -30,7 +30,7 @@
         "address": "277 VAN RIEBEECK AVENUE, LYTTELTON MANOR, Lyttelton",
         "phone": 27126644685,
         "website": "http://www.centuriongh.co.za",
-        "member-level": 1
+        "memberLevel": 1
       },
       {
         "companyname": "RICHTER SCALE CO. (PTY) LTD",
@@ -38,7 +38,7 @@
         "address": "147, INDUSTRIAL ROAD, INDUSTRIAL SITES, PRETORIA WEST, PRETORIA WEST, P.O. BOX 15666 0140., Lyttelton, South Africa",
         "phone": 27123862060,
         "website": "http://www.richterscale.co.za",
-        "member-level": 2
+        "memberLevel": 2
       },
       {
         "companyname": "BOXCO MANUFACTURERS",
@@ -46,7 +46,7 @@
         "address": "10 Techno Cmplx, 51 Venturi Cres, Hennops Park, 0157, Lyttelton",
         "phone": 27126644740,
         "website": "https://www.boxco-man.co.za",
-        "member-level": 3
+        "memberLevel": 3
       },
       {
         "companyname": "Denel Land Systems:Mechem Inc",
@@ -54,7 +54,7 @@
         "address": "Lyttelton",
         "phone": 27126403000,
         "website": "http://www.denellandsystems.co.za",
-        "member-level": 1
+        "memberLevel": 1
       },
       {
         "companyname": "CAREER PRO",
@@ -62,7 +62,7 @@
         "address": "PO Box 15100, 0140, Lyttelton, Lyttelton, South Africa",
         "phone": 27126676507,
         "website": "http://www.careerpro.co.za",
-        "member-level": 3
+        "memberLevel": 3
       },
       {
         "companyname": "HOTGROUP",
@@ -70,7 +70,7 @@
         "address": "PO Box 15071, 0140, Lyttelton, South Africa",
         "phone": "0861 HOTCALL",
         "website": "http://www.hotgroup.co.za",
-        "member-level": 3
+        "memberLevel": 3
       },
       {
         "companyname": "LUXURY RENTALS",
@@ -78,7 +78,7 @@
         "address": "G33 WATERFORD COURT, , Lyttelton, Lyttelton, South Africa",
         "phone": 27861114894,
         "website": "https://www.mmrentals.co.za",
-        "member-level": 2
+        "memberLevel": 2
       },
       {
         "companyname": "Realnet Centurion",
@@ -86,7 +86,7 @@
         "address": "28 Jean Village Centre Cnr Gerhard & Jean Ave, Centurion, 0157, Lyttelton, South Africa",
         "phone": 27126441238,
         "website": "http://www.realnet.co.za",
-        "member-level": 3
+        "memberLevel": 3
       },
       {
         "companyname": "C C P PACKAGING CC",
@@ -94,7 +94,7 @@
         "address": "132 EDISON CRES, HENNOPSPARK, P.O. BOX 15488 PRETORIA, 0140., Lyttelton, South Africa",
         "phone": 27126538978,
         "website": "http://www.ccppackaging.co.za",
-        "member-level": 3
+        "memberLevel": 3
       },
       {
         "companyname": "MONITOR NET",
@@ -102,7 +102,7 @@
         "address": "River Street, Lyttelton, South Africa",
         "phone": 27126446135,
         "website": "https://www.monitornet.co.za/",
-        "member-level": 3
+        "memberLevel": 3
       },
       {
         "companyname": "FOAM-CUSHIONS & MATTRESSES CC",
@@ -110,7 +110,7 @@
         "address": "166 Craddock Street, Lyttelton, South Africa",
         "phone": 27126646265,
         "website": "",
-        "member-level": 3
+        "memberLevel": 3
       },
       {
         "companyname": "Cartridge Hyper",
@@ -118,7 +118,7 @@
         "address": "11 Botha Ave, Pretoria, 0140, Lyttelton, South Africa",
         "phone": 27126442968,
         "website": "https://cartridgehyper.co.za/",
-        "member-level": 3
+        "memberLevel": 3
       },
       {
         "companyname": "CENTURION GATES & ELECTRONICS",
@@ -126,7 +126,7 @@
         "address": "32 Botha Av, Lyttelton, Lyttelton, South Africa",
         "phone": 27126643256,
         "website": "http://www.cengate.co.za/",
-        "member-level": 3
+        "memberLevel": 3
       },
       {
         "companyname": "KNICETIES ICT SERVICE PROVIDER PTY LTD",
@@ -134,7 +134,7 @@
         "address": "25 DF Malan Street, Lyttelton 0157",
         "phone": 27126648959,
         "website": "https://www.knisp.co.za",
-        "member-level": 1
+        "memberLevel": 1
       },
       {
         "companyname": "AEROCONVEYORS TECHNOLOGIES (PTY) LTD",
@@ -142,7 +142,7 @@
         "address": "BARCLAYS CENTRE, CNR BURGER & CANTONMENTS ROADS P.O. Box: 13488, CLUBVIEW, 0014., Lyttelton, South Africa",
         "phone": 27126642300,
         "website": "http://www.aeroco.co.za",
-        "member-level": 2
+        "memberLevel": 2
       },
       {
         "companyname": "DATANET BUREAU SERVICES CC",
@@ -150,15 +150,15 @@
         "address": "192A Glover Street, Lyttelton, South Africa",
         "phone": 27126640700,
         "website": "http://www.datanet-sa.co.za",
-        "member-level": 2
+        "memberLevel": 2
       },
       {
         "companyname": "WIMPY - LYTTELTON",
-        "logourl": "images/directory/companylogo4.webp",
+        "logourl": "images/directory/wimpy.webp",
         "address": "CNR JEAN & RABIE STR, BUS 3324 LYTTLETON-SUID, 0176., Lyttelton, South Africa",
         "phone": 27126642633,
         "website": "http://www.wimpy.co.za",
-        "member-level": 2
+        "memberLevel": 2
       },
       {
         "companyname": "NETCARE UNITAS HOSPITAL",
@@ -166,7 +166,32 @@
         "address": "CLIFTON AVENUE, ELDORAIGNE, P.O. BOX 15123, CENTURION, 0140., Lyttelton, South Africa",
         "phone": 27126778000,
         "website": "https://www.netcare.co.za",
-        "member-level": 1
+        "memberLevel": 1
+      },
+      {
+        "companyname": "PROPERTY TO RENT",
+        "logourl": "images/directory/propertytorent.webp",
+        "address": "De Howes Rd, Manor, P.O. BOX 15123, Manor, 0140., Lyttelton, South Africa",
+        "phone": 27126775895,
+        "website": "https://www.prpertyrentals.co.za",
+        "memberLevel": 2
+      },
+      {
+        "companyname": "WEBUYCARS",
+        "logourl": "images/directory/webuycars.webp",
+        "address": "R101, Centurion, P.O. BOX 15123, Midrand, 0140., Lyttelton, South Africa",
+        "phone": 27126778000,
+        "website": "https://www.webuycars.co.za",
+        "memberLevel": 1
+      },
+      {
+        "companyname": "MOVERS WANTED?",
+        "logourl": "images/directory/truck-mover.webp",
+        "address": "Joburg Road, manor, P.O. BOX 15123, Manor City, 0140., Lyttelton, South Africa",
+        "phone": 271278928000,
+        "website": "https://www.truck-mover.co.za",
+        "memberLevel": 2
       }
+
     ]
   }
