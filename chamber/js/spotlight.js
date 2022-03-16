@@ -21,7 +21,7 @@ fetch(spotURL)
         // console.log(goldMembers);
         // add to page
         setInterval(function() {
-            advertLoad()
+            spotlightLoad()
         }, 2000);
         // window.addEventListener("load", goldLoad);
         // window.addEventListener("reload", goldLoad)
@@ -31,7 +31,7 @@ fetch(spotURL)
         // console.log(silverMembers)
         });
 
-function advertLoad() {
+function spotlightLoad() {
     // Load random Gold Member to spotlight 1
     document.querySelector(".spot1H2").textContent = goldMembers[i].companyname;
     document.querySelector(".spot1p").textContent = goldMembers[i].website;
@@ -49,7 +49,7 @@ function advertLoad() {
     // load spotlight3 only when it is on screen.
     window.addEventListener("resize", function () {
         if (document.documentElement.clientWidth >= 1024) {
-            // load random Silver member to spotlight 3
+            // load random Silver member to spotlight 3 for screen size only
             document.querySelector(".spot3H2").textContent = goldMembers[k].companyname;
             document.querySelector(".spot3p").innerHTML = `Call us today: +${goldMembers[k].phone}`;
             document.querySelector(".spot3img").setAttribute("src", goldMembers[k].logourl);
