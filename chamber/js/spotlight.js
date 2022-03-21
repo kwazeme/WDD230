@@ -4,7 +4,7 @@ const i = getRandomIntInclusive(0, 6); //gold member random index
 // console.log(i)
 const j = getRandomIntInclusive(0, 7); // silver members random index
 // console.log(j)
-const k = getRandomIntInclusive(0, 12); // gold + silver members random index
+const k = getRandomIntInclusive(0, 14); // gold + silver members random index
 // console.log(k)
 
 // basic fetch( method) implementation
@@ -18,7 +18,7 @@ fetch(spotURL)
         const spotCo = jsonData["directory"];
         // filter gold members
         goldMembers = spotCo.filter(members => members.memberLevel === 1);
-        // console.log(goldMembers);
+        //console.log(goldMembers);
         // add to page
         setInterval(function() {
             spotlightLoad()
@@ -28,7 +28,10 @@ fetch(spotURL)
 
         // filter silver members
         silverMembers = spotCo.filter(members => members.memberLevel === 2);
-        // console.log(silverMembers)
+        //console.log(silverMembers)
+        // filter silver + Gold members for spotlight 3
+        silvgoldMembers = spotCo.filter(members => members.memberLevel <= 2);
+        //console.log(silvgoldMembers)
         });
 
 function spotlightLoad() {
@@ -39,22 +42,22 @@ function spotlightLoad() {
     document.querySelector(".spot1img").setAttribute("alt", `${goldMembers[i].companyname} logo`)
     document.querySelector(".spot1img").setAttribute("loading", "lazy"); 
 
-    // Load random Silver or Gold member to spotlight 2
-    document.querySelector(".spot2H2").textContent = goldMembers[j].companyname;
-    document.querySelector(".spot2p").innerHTML = `Phone: +${goldMembers[j].phone}`;
-    document.querySelector(".spot2img").setAttribute("src", goldMembers[j].logourl);
-    document.querySelector(".spot2img").setAttribute("alt", `${goldMembers[j].companyname} logo`)
+    // Load random Silver member to spotlight 2
+    document.querySelector(".spot2H2").textContent = silverMembers[j].companyname;
+    document.querySelector(".spot2p").innerHTML = `Phone: +${silverMembers[j].phone}`;
+    document.querySelector(".spot2img").setAttribute("src", silverMembers[j].logourl);
+    document.querySelector(".spot2img").setAttribute("alt", `${silverMembers[j].companyname} logo`)
     document.querySelector(".spot2img").setAttribute("loading", "lazy"); 
 
     // load spotlight3 only when it is on screen.
     window.addEventListener("resize", function () {
         if (document.documentElement.clientWidth >= 1024) {
-            // load random Silver member to spotlight 3 for screen size only
-            document.querySelector(".spot3H2").textContent = goldMembers[k].companyname;
-            document.querySelector(".spot3p").innerHTML = `Call us today: +${goldMembers[k].phone}`;
-            document.querySelector(".spot3img").setAttribute("src", goldMembers[k].logourl);
-            document.querySelector(".spot3img").setAttribute("alt", `${goldMembers[k].companyname} logo`)
-            document.querySelector(".spot3img").setAttribute("loading", "lazy"); 
+            // load random Silver or Gold member to spotlight 3 for screen size only
+            document.querySelector(".spot3H2").textContent = silvgoldMembers[k].companyname;
+            document.querySelector(".spot3p").innerHTML = `Call us today: +${silvgoldMembers[k].phone}`;
+            document.querySelector(".spot3img").setAttribute("src", silvgoldMembers[k].logourl);
+            document.querySelector(".spot3img").setAttribute("alt", `${silvgoldMembers[k].companyname} logo`)
+            document.querySelector(".spot3img").setAttribute("loading", "lazy");
         } 
     }, false);
 }
