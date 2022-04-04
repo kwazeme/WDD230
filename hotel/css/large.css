@@ -1,0 +1,62 @@
+/* 64em is also 1028px (if basefont is 16px) */
+@media only screen and (min-width: 64rem) {
+
+    header, nav, main, footer {
+        /* max-width: 64rem; */
+        margin:auto;
+    }
+
+/*----------- BODY --------------*/
+.content {
+  display: grid;
+  grid-template-columns: 150px repeat(4, 1fr) 150px;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    display: flex;
+    padding: 0;
+    text-align: center;
+    /* color: var(--accent2-color); */
+    /* background-color: var(--primary-color); */
+  }
+  .weather-alert {
+    width: 30%;
+    height: 10%;
+    position: absolute;
+    left: 300px;
+  }
+  .bookNow {
+      position: relative;
+      top: 350px;
+      right: 20px;
+      width: 10%;
+      height: 10%;
+     
+
+  }
+
+
+
+/*----------- NAVIGATION --------------*/
+#burgerBtn {display: none;}
+#pNav { display: flex;}
+#pNav ul li { flex: 1 1 auto;}
+#pNav ul li a {padding: .5rem 1rem;}
+#pNav ul li a {border: none;}
+
+
+
+/*----------- MAIN --------------*/
+/* TEMPLE PAGE */
+
+
+
+/*----------- FOOTER --------------*/
+.map iframe {
+  width: 400px;
+  height: 400px;
+}
+    
+} /* end of media query */

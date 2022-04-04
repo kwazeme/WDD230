@@ -1,0 +1,56 @@
+{
+    "temples": [
+      {
+        "templeName": "Durban, South Africa",
+        "imageURL": "images/durban.webp",
+        "address": "2 Izinga Drive,\n Izinga Ridge,Umhlanga, KwaZulu-Natal, 4021,  South Africa",
+        "telephone": "(27) 31-140-0240",
+        "emailAddress": "log in to send email to Durban Temple",
+        "services": "No clothing rental available  cafeteria available  No patron housing available  Distribution center nearby",
+        "shortHistory": "1 October 2011  Announced  9 April 2016 Groundbreaking  February 2020 Dedicated",
+        "dedicatoryprayer": "https://www.churchofjesuschrist.org/temples/details/durban-south-africa-temple/prayer/2020-02-16?lang=eng",
+        "ordinances": "Ordinances for family names must be done in proper sequence—baptism, confirmation, Melchizedek Priesthood ordination (males), initiatory, endowment, and then sealing. Please allow sufficient time to perform all the ordinances you wish to complete during your visit. For additional help and information, please call the temple.",
+        "sessionSchedule": "PHASE 3: ALL LIVING ORDINANCES AND LIMITED PROXY ORDINANCES",
+        "templeClosure": "Friday, 15 April 2022  Wednesday, 27 April 2022 Thursday, 16 June 2022  Monday, 1 August 2022 - Monday, 15 August 2022  Saturday, 24 September 2022  Friday, 16 December 2022  Saturday, 24 December 2022  Saturday, 31 December 2022"
+      },
+      {
+        "templeName": "Salt Lake Temple",
+        "imageURL": "images/saltlake.webp",
+        "address": "50 W North Temple St Salt Lake City UT 84150-9709  United States",
+        "telephone": "84150-9709",
+        "emailAddress": "login to email",
+        "services": "Temple closed during renovation",
+        "shortHistory": "28 July 1847 Announced  14 February 1853 Groundbreaking  6 April 1893Dedicated",
+        "dedicatoryprayer": "https://www.churchofjesuschrist.org/temples/details/salt-lake-temple/prayer/1893-04-06?lang=eng",
+        "ordinances": "Ordinances for family names must be done in proper sequence—baptism, confirmation, Melchizedek Priesthood ordination (males), initiatory, endowment, and then sealing. Please allow sufficient time to perform all the ordinances you wish to complete during your visit. For additional help and information, please call the temple.",
+        "sessionSchedule": "Temple closed during renovation",
+        "templeClosure": "Temple closed during renovation"
+      },
+      {
+        "templeName": "Washington DC Temple",
+        "imageURL": "images/washington.webp",
+        "address": "9900 Stoneybrook Dr  Kensington MD 20895-3199  United States",
+        "telephone": "301-588-0650",
+        "emailAddress": "login to email",
+        "services": "Temple closed during renovation",
+        "shortHistory": "15 November 1968 Announced  7 December 1968 Groundbreaking  19 November 1974 Dedicated  14 August 2022 Rededicated",
+        "dedicatoryprayer": "https://www.churchofjesuschrist.org/temples/details/washington-d.c.-temple/prayer/1974-11-19?lang=eng",
+        "ordinances": "Ordinances for family names must be done in proper sequence—baptism, confirmation, Melchizedek Priesthood ordination (males), initiatory, endowment, and then sealing. Please allow sufficient time to perform all the ordinances you wish to complete during your visit. For additional help and information, please call the temple.",
+        "sessionSchedule": "Temple closed during renovation",
+        "templeClosure": "Open house April 28, 2022 - June 11, 2022."
+      },
+      {
+        "templeName": "Rome, Italy Temple",
+        "imageURL": "images/rome.webp",
+        "address": "Via di Settebagni 376 Rome RM Italy",
+        "telephone": "(39) 06-9480-5050",
+        "emailAddress": "login to email",
+        "services": "Clothing rental available No cafeteria available Patron housing available Distribution center nearby",
+        "shortHistory": "4 October 2008 Announced  23 October 2010 Groundbreaking 10 March 2019 Dedicated",
+        "dedicatoryprayer": "https://www.churchofjesuschrist.org/temples/details/rome-italy-temple/prayer/2019-03-10?lang=eng",
+        "ordinances": "Ordinances for family names must be done in proper sequence—baptism, confirmation, Melchizedek Priesthood ordination (males), initiatory, endowment, and then sealing. Please allow sufficient time to perform all the ordinances you wish to complete during your visit. For additional help and information, please call the temple.",
+        "sessionSchedule": "PHASE 3: ALL LIVING ORDINANCES AND LIMITED PROXY ORDINANCES",
+        "templeClosure": "Monday, 28 February 2022 - Monday, 9 May 2022 Wednesday, 29 June 2022 Monday, 19 September 2022 - Monday, 3 October 2022 Saturday, 24 December 2022 - Monday, 26 December 2022 Saturday, 31 December 2022 - Sunday, 1 January 2023"
+      }
+    ]
+  }
