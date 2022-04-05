@@ -355,7 +355,7 @@ div.ffield {
   color: var(--accent2-color);
 }
 /* RESERVATION PAGE FORM */
-.resMain, .servMain {
+.resMain, .servMain, .recMain {
   display: grid;
   grid-template-columns: 100px 1fr 100px;
 }
@@ -372,7 +372,7 @@ div.ffield {
   /* max-width: 20rem; */
   margin-top: 15px;
 }
-.resMain h2, .servMain h2 {
+.resMain h2, .servMain h2, .recMain h2 {
   grid-row: 1;
   grid-column: 2/3;
   text-decoration: 0;
@@ -438,7 +438,14 @@ font-weight: bold;
   float: left;
   padding: 20px;
 }
-
+/* RECEPTION PAGE CSS */
+.events {
+  grid-column: 2/3;
+}
+.gallery {
+  grid-column: 2/3;
+  grid-row: 3;
+}
 
 
 
