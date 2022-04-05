@@ -23,3 +23,7 @@ for (let i = 0; i < navLinks.length; i++) {
     });
     
 }
+// Last modified date and time.
+let lastModified = new Date(document.lastModified);
+lastMod = {day: "numeric", weekday: "long", month: "long", year: "numeric", hour: "numeric", hour24: true, minute:"numeric"};
+document.querySelector(".lastModified").textContent = lastModified.toLocaleDateString("en-ZA",lastMod);
