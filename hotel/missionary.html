@@ -20,7 +20,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Vesper+Libre:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="js/main.js" defer></script>
     <!-- <script src="js/cweather.js" defer></script> -->
-    <script src="js/subscribe.js" defer></script>
+    <!-- <script src="js/subscribe.js" defer></script> -->
+    <script src="js/mission.js" defer></script>
 </head>
 <body>
     <header class="clearfix">
@@ -72,6 +73,7 @@
                     an easy chair that you can sit and   admire the sweeping views of the city.</p>
             </figcaption>
         </figure>
+        <hr>
         <figure>
             <img src="images/standardking.webp" alt="Standard Mission Room">
             <figcaption>
@@ -80,6 +82,7 @@
                     refrigerator and complimentary in-room coffee and tea, cable TV and more</p>
             </figcaption>
         </figure>
+        <hr>
         <figure>
             <img src="images/missionking.webp" alt="Mission Room">
             <figcaption>
@@ -88,6 +91,7 @@
                     an easy chair that you can sit and   admire the sweeping views of the city.</p>
             </figcaption>
         </figure>
+        <hr>
         <figure>
             <img src="images/homeking.webp" alt="Home Mission Room">
             <figcaption>
@@ -96,10 +100,38 @@
                      refrigerator and complimentary in-room coffee and tea, cable TV and more.</p>
             </figcaption>
         </figure>
+        <hr>
         <div class="enquiryForm">
-            <form action="" method="get">
-                <!-- START LONG TIME MISSION ENQUIRY FORM -->
-            </form>
+            <h3><span class="enqSubmit">Contact Us</span></h3>
+            <div class="enquiry">
+                <span class="enqAcknow"></span>
+                <form action="" method="get">
+              
+                  <label for="fname" class="ffield mForm">First Name
+                  <input type="text" class="ffield mForm" id="fname" name="firstname" placeholder="Your name.." required></label>
+              
+                  <label for="lname" class="ffield mForm">Last Name
+                  <input type="text" class="ffield mForm" id="lname" name="lastname" placeholder="Your last name.." required></label>
+              
+                  <label for="country" class="ffield mForm">Country
+                  <select id="country" name="country" class="ffield" required>
+                    <option value="">Select Country Required</option>
+                    <option value="usa">United States</option>
+                    <option value="italy">Italy</option>
+                    <option value="south_africa">South Africa</option>
+                    <option value="nigeria">Nigeria</option>
+                    <option value="ghana">Ghana</option>
+                    <option value="south_korea">South Korea</option>
+                    <option value="japan">Japan</option>
+                    <option value="zealand">New Zealand</option>
+                  </select></label>
+              
+                  <label for="subject" class="ffield mForm">Additional Details</label>
+                  <textarea id="subject" class="ffield" name="subject" placeholder="Additional details..." style="height:200px"></textarea>
+              
+                  <input class="ffield btn" type="submit" value="send request">
+                </form>
+              </div> 
 
         </div>
 

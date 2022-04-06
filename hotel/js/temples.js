@@ -82,7 +82,7 @@ const likeRome = document.querySelector(".like-btnRome")
 likeRome.addEventListener("click", function (e) {
     e.preventDefault();
     document.getElementById("likeRome").classList.toggle("clicked");
-    document.querySelector(".likeR").textContent = "You Liked Rome Temple!"
+    document.querySelector(".likeR").textContent = "Liked Rome Temple!"
     // add localStorage for Liked Rome
     const romeStor = document.querySelector("#likeRome");
     if(romeStor.classList.contains("clicked")) {
@@ -97,7 +97,7 @@ const likeWash = document.querySelector(".like-btnWash")
 likeWash.addEventListener("click", function (e) {
     e.preventDefault();
     document.getElementById("likeWash").classList.toggle("clicked");
-    document.querySelector(".likeW").textContent = "You Liked Washington Temple!"
+    document.querySelector(".likeW").textContent = "Liked Washington Temple!"
     // add localStorage for Liked Wash
     const WashStor = document.querySelector("#likeWash");
     if(WashStor.classList.contains("clicked")) {
@@ -112,7 +112,7 @@ const likeSalt = document.querySelector(".like-btnSalt")
 likeSalt.addEventListener("click", function (e) {
     e.preventDefault();
     document.getElementById("likeSalt").classList.toggle("clicked");
-    document.querySelector(".likeW").textContent = "You Liked Salt Lake City Temple!"
+    document.querySelector(".likeS").textContent = "Liked Salt Lake Temple!"
     // add localStorage for Liked Salt
     const SaltStor = document.querySelector("#likeSalt");
     if(SaltStor.classList.contains("clicked")) {
@@ -127,7 +127,7 @@ const likeDurban = document.querySelector(".like-btnDurban")
 likeDurban.addEventListener("click", function (e) {
     e.preventDefault();
     document.getElementById("likeDurban").classList.toggle("clicked");
-    document.querySelector(".likeW").textContent = "You Liked Durban Temple!"
+    document.querySelector(".likeD").textContent = "Liked Durban Temple!"
     // add localStorage for Liked Durban
     const DurbanStor = document.querySelector("#likeDurban");
     if(DurbanStor.classList.contains("clicked")) {
