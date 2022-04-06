@@ -1,6 +1,6 @@
 // window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];  window.myWidgetParam.push({id: 15,cityid: '964137',appid: 'b9844c0f082309852779221734dfd734',units: 'metric',containerid: 'openweathermap-widget-15',  });  (function() {var script = document.createElement('script');script.async = true;script.charset = "utf-8";script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(script, s);  })();
 // create an "apiURL" variable
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?q=Durban&units=metric&appid=b9844c0f082309852779221734dfd734"
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?q=Bethesda,US&units=metric&appid=b9844c0f082309852779221734dfd734"
 // Use fetch() to request the given apiURL. 
 fetch(apiURL) 
     .then((response) => response.json())
