@@ -18,4 +18,46 @@ fetch(apiURL)
         document.querySelector(".windSpeed").innerHTML = `Feels Like: </td><td>&emsp;<b>${jsonObject.main.feels_like.toFixed(0)}</b>&deg;C</td></tr>&emsp;
         <tr><td>Humidity:&emsp; </td><td><b>${jsonObject.main.humidity}%</b>&emsp;</td></tr>
         <br><tr><td>Speed:&emsp;</td><td><b>${jsonObject.wind.speed}</b> m/s</td></tr>`;
+        
+    });
+
+   
+const forcastCall = "https://api.openweathermap.org/data/2.5/onecall?lat=38.9807&lon=-77.1003&units=metric&appid=738cfd76548e863c2aa9ed6816672068"
+// Use fetch() to request the given API. 
+fetch(forcastCall) 
+    .then((response) => response.json())
+    .then((jsonObject) => {
+        console.log(jsonObject);
+        // write the temperature value to the HTML document.
+        document.querySelector(".forecast-3d").innerHTML = `
+        <table class="weTable">
+        <tr>
+            <td>icon</th>
+            <td>Day:</th>
+            <td>Temperature</th>
+            <td>Description</th>
+        </tr>
+        <tr>
+            <td><img src=https://openweathermap.org/img/w/${jsonObject.daily[0].weather[0].icon}.png alt="weather icon"></td>
+            <td>${jsonObject.daily[0].dt}</td>
+            <td>day : ${jsonObject.daily[0].temp.day}&degC; <br>min: ${jsonObject.daily[0].temp.min}&degC; <br>max: ${jsonObject.daily[0].temp.max}&degC; </td>
+            <td>${jsonObject.daily[0].weather[0].description}</td>
+        </tr>
+        <tr>
+            <td><img src=https://openweathermap.org/img/w/${jsonObject.daily[1].weather[0].icon}.png alt="weather icon"></td>
+            <td>${jsonObject.daily[1].dt}</td>
+            <td>day : ${jsonObject.daily[1].temp.day}&degC; <br>min: ${jsonObject.daily[1].temp.min}&degC; <br>max: ${jsonObject.daily[1].temp.max}&degC; </td>
+            <td>${jsonObject.daily[1].weather[0].description}</td>
+        </tr>
+        <tr>
+            <td><img src=https://openweathermap.org/img/w/${jsonObject.daily[2].weather[0].icon}.png alt="weather icon"></td>
+            <td>${jsonObject.daily[2].dt}</td>
+            <td>day : ${jsonObject.daily[2].temp.day}&degC; <br>min: ${jsonObject.daily[2].temp.min}&degC; <br>max: ${jsonObject.daily[2].temp.max}&degC; </td>
+            <td>${jsonObject.daily[2].weather[0].description}</td>
+        </tr>
+        </table>
+        
+        `
+  
+        
     });

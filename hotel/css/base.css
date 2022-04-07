@@ -251,6 +251,7 @@ figure.logo img {
 .wForecast {
   grid-column: 4/6;
   border: 1px solid var(--headline-color-on-color);
+  margin-top: 100px;
 }
 .genInfo {
   display: block;
@@ -478,7 +479,18 @@ form label.mForm {
   width: 200px;
 }
 
+table.weTable {
+  background-color: var(--paragraph-color-on-white);
+  color: var(--accent2-color);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 100px;
+  margin-left: 30px;
+}
 
+table.weTable td {
+  padding: 10px;
+}
 
 
 
