@@ -27,7 +27,7 @@ const forcastCall = "https://api.openweathermap.org/data/2.5/onecall?lat=38.9807
 fetch(forcastCall) 
     .then((response) => response.json())
     .then((jsonObject) => {
-        console.log(jsonObject);
+        // console.log(jsonObject);
         // write the temperature value to the HTML document.
         document.querySelector(".forecast-3d").innerHTML = `
         <table class="weTable">
